@@ -6,3 +6,4 @@ Nationality: Japanese<br>
 ## Favourites
 * Minecraft Java Edition
 * Haskell
+* Lisp
