@@ -1,9 +1,8 @@
 # About Me
 Name: Sasaki Touma<br>
 Birthday: 15 September 2006 (17 years old)<br>
-Nationality: Japanese<br>
+Languages: Japanese and English (en_GB)<br>
 
 ## Favourites
-* Minecraft Java Edition
 * Haskell
 * Lisp
