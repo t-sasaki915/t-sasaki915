@@ -11,6 +11,6 @@ Birthday: 15 September 2006 (17 years old)<br>
 - Lisp
 
 #### Favourite Monads and Functions
-- ExceptT
-- foldM
-- liftM2
+- ExceptT (Has been rescued me from trillions of Either.)
+- foldM (Almost essential for me to work with ExceptT.)
+- liftM2 (I have really no idea why but I love it.)
