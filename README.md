@@ -3,9 +3,9 @@ Name: Sasaki Touma<br>
 Birthday: 15 September 2006 (17 years old)<br>
 
 #### Languages I can barely speak
-- Japanese
+- Japanese (native)
 - English (en_GB)
 
 #### Favourite Programming Languages
-- Haskell
+- Haskell (main)
 - Lisp
