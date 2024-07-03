@@ -6,6 +6,7 @@ Birthday: 15 September 2006 (17 years old)<br>
 - Haskell
 - Lisp
 - Functional Programming
+- Scottish accent
 
 #### Languages I can barely speak
 - Japanese (native)
