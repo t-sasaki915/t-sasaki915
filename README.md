@@ -1,6 +1,7 @@
 # About Me
 Name: Sasaki Touma<br>
 Birthday: 15 September 2006 (17 years old)<br>
+My bad habit: Ignores the best practice of selecting programming languages, and uses Haskell.
 
 #### Favourites
 - Haskell
