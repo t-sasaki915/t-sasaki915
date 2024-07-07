@@ -15,3 +15,5 @@ My bad habit: Ignores the best practice of selecting programming languages, and 
 
 #### Programming Languages I can use
 - Haskell
+
+\* This is quite a problem. I need more skills, or I will be unable to get a job.
