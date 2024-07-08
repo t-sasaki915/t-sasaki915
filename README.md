@@ -12,6 +12,10 @@ Birthday: 15 September 2006 (17 years old)<br>
 - Japanese (native)
 - English (en_GB)
 
+#### What I am currently working
+- [intro-haskell](https://github.com/t-sasaki915/intro-haskell): An attemption of writing a Japanese Haskell reference.
+- [hisp](https://github.com/t-sasaki915/hisp): An implementation of Common Lisp written in Haskell.
+
 #### Programming Languages I can use
 - Haskell
 
