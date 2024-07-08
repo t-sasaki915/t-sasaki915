@@ -16,7 +16,8 @@ Birthday: 15 September 2006 (17 years old)<br>
 - [intro-haskell](https://github.com/t-sasaki915/intro-haskell): An attemption of writing a Japanese Haskell tutorial.
 - [hisp](https://github.com/t-sasaki915/hisp): An implementation of Common Lisp written in Haskell.
 
-#### Programming Languages I can use
-- Haskell
-
-\* This is quite a problem. I need more skills, or I will be unable to get a job.
+#### FAQ
+- Q: Can you use programming languages any other than Haskell?<br>
+  A: No, I can't.
+- Q: Is it okay to copy and paste your programs into my project?<br>
+  A: Aye, of course.
