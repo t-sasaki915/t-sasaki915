@@ -21,3 +21,5 @@ Birthday: 15 September 2006 (17 years old)<br>
   A: No, I can't.
 - Q: Is it okay to copy and paste your programs into my project?<br>
   A: Aye, of course.
+- Q: Your programs are hard to read, don't you think?<br>
+  A: I'm quite sorry.
