@@ -1,5 +1,5 @@
 # About Me
-Name: Sasaki Touma<br>
+Name: Sasaki Touma (TSasaki)<br>
 Birthday: 15 September 2006 (17 years old)<br>
 
 #### Favourites
