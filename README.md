@@ -1,6 +1,6 @@
 # About Me
 Name: Sasaki Touma (TSasaki)<br>
-Birthday: 15 September 2006 (17 years old)<br>
+Birthday: 15 September 2006 (18 years old)<br>
 
 #### Favourites
 - Haskell
