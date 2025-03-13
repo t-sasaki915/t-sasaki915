@@ -6,6 +6,7 @@ Birthday: 15 September 2006<br>
 - Haskell
 - Lisp
 - Functional Programming
+- Classical Music
 
 #### Languages I can speak
 - Japanese (native)
