@@ -1,12 +1,11 @@
 # About Me
-Name: Sasaki Touma (TSasaki)<br>
-Birthday: 15 September 2006 (18 years old)<br>
+Name: Toma Sasaki<br>
+Birthday: 15 September 2006<br>
 
 #### Favourites
 - Haskell
 - Lisp
 - Functional Programming
-- Scottish accent
 
 #### Languages I can speak
 - Japanese (native)
