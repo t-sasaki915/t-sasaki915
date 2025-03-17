@@ -22,5 +22,5 @@ Residence: England and Japan (when I'm on a long holiday)<br>
 - I am eager to get tips and advice on my works.
 - I will answer to your questions as thoroughly as I can.
 - My favourite violinist is Itzhak Perlman.
-- If you want to play Minecraft with me, please leave a message on this server: mc.t-sasaki.net.
+- I have a Minecraft server that you can modify the world very freely: mc.t-sasaki.net.
 - I prefer Windows. MacOS and Linux are too difficult.
