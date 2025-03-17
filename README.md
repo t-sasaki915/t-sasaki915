@@ -14,7 +14,7 @@ Residence: England and Japan (when I'm on a long holiday)<br>
 - en_GB (fairly confident)
 
 #### Organisations
-- The University of Manchester (as a student)
+- The University of Manchester (as an undergraduate student)
 
 #### Notes
 - Please don't expect me a beautiful code.
