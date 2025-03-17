@@ -1,17 +1,11 @@
 # About Me
 Name: Toma Sasaki<br>
 Birthday: 15 September 2006<br>
-Major: Maths and Computer Science
+Major: Maths and Computer Science<br>
 
-#### Favourites
-- Haskell
-- Lisp
-- Classical Music
-- ThinkPad
+#### Skills
+- Programming with Haskell
 
-#### Languages I can speak
-- Japanese (native)
-- English (en_GB)
-
-#### Programming Languages I can use
-- Haskell
+#### Languages
+- ja_JP (very confident)
+- en_GB (fairly confident)
