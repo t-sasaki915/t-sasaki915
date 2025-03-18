@@ -16,8 +16,9 @@ Residence: England and Japan (when I'm on a long holiday)<br>
 #### Organisations
 - The University of Manchester (as an undergraduate student)
 
-#### Notes
+#### Notes (Please note that these informations are not important at all.)
 - I don't think anyone would do that, but as I'm not a skilled violinist, don't invite me to concerts as a player.
 - My favourite violinist is Itzhak Perlman.
 - I have a Minecraft server that you can modify the world very freely: mc.t-sasaki.net.
-- I prefer Windows. MacOS and Linux are too difficult.
+- I prefer Windows. MacOS and Linux are too difficult for me.
+- Sending me a viola will make me very happy. Really.
