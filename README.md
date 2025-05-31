@@ -1,4 +1,7 @@
 # About Me
+
+Haskell enjoyer, amateur violin player, Mozart lover and university student.<br><br>
+
 Name: Toma Sasaki<br>
 Birthday: 15 September 2006<br>
 Major: Maths and Computer Science<br>
