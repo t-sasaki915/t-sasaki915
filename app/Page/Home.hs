@@ -47,7 +47,7 @@ instance Page HomePage where
                     <li>Beethoven: String Quartet No 13 in B-flat major
                     <li>Beethoven: Symphony No 9 in D minor
                     <li>Schubert: Piano Sonata No 20 in A major
-                <span>* What I have written here are just a few part of my favourites pieces. I cannot write all of them because the file size would be 5000TB.
+                <span>* What I have written here are just a few part of my favourites. I cannot write all of them because the file size would be 5000TB.
 
                 <h2>Languages I speak
                 <ul>
