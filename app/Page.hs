@@ -27,7 +27,7 @@ defaultPageLayout content =
                 <title>t-sasaki.net
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta name="description" content="t-sasaki.net">
-                <link rel="stylesheet" href="index.css">
+                <link rel="stylesheet" href="/index.css">
 
             <body>
                 ^{content}
