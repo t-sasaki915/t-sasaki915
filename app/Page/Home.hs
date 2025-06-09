@@ -23,7 +23,7 @@ instance Page HomePage where
                 <br>
                 <span>
                     If you prefer reading my basic informations in Haskell,
-                    <a href="/basicInfoInHaskell.html">please click here.
+                    <a href="/BasicInfoInHaskell/">please click here.
 
                 <h2>Skills
                 <ul>

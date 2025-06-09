@@ -8,7 +8,7 @@ import           Page (Page (..), defaultPageLayout, shamlet)
 data BasicInfoInHaskellPage = BasicInfoInHaskellPage deriving Show
 
 instance Page BasicInfoInHaskellPage where
-    pageName BasicInfoInHaskellPage = "basicInfoInHaskell"
+    pageName BasicInfoInHaskellPage = "BasicInfoInHaskell"
 
     pageContent BasicInfoInHaskellPage =
         defaultPageLayout

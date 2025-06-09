@@ -2,6 +2,7 @@ module Main (main) where
 
 import           Data.ByteString          (ByteString)
 import qualified Data.ByteString          as BS
+import           Data.Text                (unpack)
 import           Options.Applicative
 import           System.Directory         (createDirectoryIfMissing)
 import           System.FilePath          ((</>))
@@ -40,10 +41,19 @@ generatePages ctx = do
 
         generateHtml :: Page a => a -> IO ()
         generateHtml page =
-            let renderedHtml = renderMarkup (pageContent page)
-                fileName = printf "%s.html" (pageName page) in
-                    BS.writeFile (outputDir ctx </> fileName) (BS.toStrict renderedHtml) >>
-                        putStrLn (printf "Generated %s (%s)" (show page) fileName)
+            case pageName page of
+                "index" -> writeHtml (outputDir ctx)
+                pageDirName' ->
+                    let pageDir = outputDir ctx </> unpack pageDirName' in
+                        createDirectoryIfMissing True pageDir >>
+                            writeHtml pageDir
+            where
+                writeHtml :: FilePath -> IO ()
+                writeHtml filePath =
+                    let renderedHtml = BS.toStrict $ renderMarkup (pageContent page) in
+                        BS.writeFile (filePath </> "index.html") renderedHtml >>
+                            putStrLn (printf "Generated %s" (show page))
+
 
 argParser :: Parser GeneratorContext
 argParser = GeneratorContext
