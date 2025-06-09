@@ -30,6 +30,25 @@ instance Page HomePage where
                     <li>Programming with Haskell
                     <li>Programming with Scala
 
+                <h2>Interests
+                <ul>
+                    <li>(Pure) Functional Programming
+                    <li>Type Safety
+                    <li>Orchestral Music
+                    <li>Chamber Music
+
+                <h2>Favourites
+                <ul>
+                    <li>Haskell
+                    <li>LISP
+                    <li>Mozart: Serenade No 6 in D major
+                    <li>Mozart: Violin Concerto No 3 in G major
+                    <li>Mozart: Sinfonia Concertante in E-flat major
+                    <li>Beethoven: String Quartet No 13 in B-flat major
+                    <li>Beethoven: Symphony No 9 in D minor
+                    <li>Schubert: Piano Sonata No 20 in A major
+                <span>* What I have written here are just a few part of my favourites pieces. I cannot write all of them because the file size would be 5000TB.
+
                 <h2>Languages I speak
                 <ul>
                     <li>Japanese (ja_JP, very confident)
