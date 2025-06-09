@@ -13,7 +13,7 @@ import           Page.BasicInfoInHaskell  (BasicInfoInHaskellPage (..))
 import           Page.Home                (HomePage (..))
 import           Statics                  (staticFiles)
 
-data GeneratorContext = GeneratorContext
+newtype GeneratorContext = GeneratorContext
     { outputDir :: FilePath
     }
 
