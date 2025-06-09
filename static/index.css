@@ -8,3 +8,7 @@
     font-variation-settings:
         "wdth" 100;
 }
+
+.indent {
+    width: 4em;
+}

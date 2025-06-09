@@ -9,6 +9,7 @@ import           Text.Blaze.Renderer.Utf8 (renderMarkup)
 import           Text.Printf              (printf)
 
 import           Page                     (Page (..))
+import           Page.BasicInfoInHaskell  (BasicInfoInHaskellPage (..))
 import           Page.Home                (HomePage (..))
 import           Statics                  (staticFiles)
 
@@ -27,6 +28,7 @@ generatePages ctx = do
     putStrLn "Generating HTMLs..."
 
     generateHtml HomePage
+    generateHtml BasicInfoInHaskellPage
 
     putStrLn "Complete"
 

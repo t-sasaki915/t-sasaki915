@@ -20,6 +20,7 @@ executable t-sasaki-net-generator
   main-is: Main.hs
   other-modules:
       Paths_t_sasaki_net
+      Page.BasicInfoInHaskell
       Page.Home
       Page
       Statics

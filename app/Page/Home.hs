@@ -20,6 +20,10 @@ instance Page HomePage where
                 <span>Birthday: 15 September 2006<br>
                 <span>Major: Maths and Computer Science<br>
                 <span>Residence: England and Japan (when I'm on a long holiday)<br>
+                <br>
+                <span>
+                    If you prefer reading my basic informations in Haskell,
+                    <a href="/basicInfoInHaskell.html">please click here.
 
                 <h2>Skills
                 <ul>

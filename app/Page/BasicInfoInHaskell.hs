@@ -1,0 +1,46 @@
+{-# LANGUAGE InstanceSigs #-}
+{-# LANGUAGE QuasiQuotes  #-}
+
+module Page.BasicInfoInHaskell (BasicInfoInHaskellPage (..)) where
+
+import           Page (Page (..), defaultPageLayout, shamlet)
+
+data BasicInfoInHaskellPage = BasicInfoInHaskellPage deriving Show
+
+instance Page BasicInfoInHaskellPage where
+    pageName BasicInfoInHaskellPage = "basicInfoInHaskell"
+
+    pageContent BasicInfoInHaskellPage =
+        defaultPageLayout $
+            [shamlet|
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/haskell.min.js">
+                <script>hljs.highlightAll();
+
+                <pre>
+                    <code .language-haskell>
+                        <span>{-# LANGUAGE InstanceSigs #-}
+                        <span>{-# LANGUAGE OverloadedStrings #-}
+                        <span>{-# LANGUAGE LambdaCase #-}
+                        <br>
+                        <span>data TomaSasaki = TomaSasaki
+                        <br>
+                        <span>instance Person TomaSasaki where
+                        <span>    name :: Person -> Text
+                        <span>    name TomaSasaki = "Toma Sasaki"
+                        <br>
+                        <span>    birthday :: Person -> Date
+                        <span>    birthday TomaSasaki = DDMMYYYY 15 09 2006
+                        <br>
+                        <span>    majors :: Person -> [Subject]
+                        <span>    majors TomaSasaki = [Maths, ComputerScience]
+                        <br>
+                        <span>    residence :: Person -> IO Place
+                        <span>    residence TomaSasaki =
+                        <span>        personStatus TomaSasaki >>= \case
+                        <span>            OnLongHoliday -> return Japan
+                        <span>            _             -> return England
+
+                <a href="/">Back
+            |]
