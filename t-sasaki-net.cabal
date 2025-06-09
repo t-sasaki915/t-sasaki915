@@ -1,0 +1,30 @@
+cabal-version: 2.2
+
+name:           t-sasaki-net
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/t-sasaki915/t-sasaki915#readme>
+homepage:       https://github.com/t-sasaki915/t-sasaki915#readme
+bug-reports:    https://github.com/t-sasaki915/t-sasaki915/issues
+author:         Toma Sasaki
+maintainer:     netst915@gmail.com
+copyright:      2025 Toma Sasaki
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/t-sasaki915/t-sasaki915
+
+executable t-sasaki-net-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_t_sasaki_net
+  autogen-modules:
+      Paths_t_sasaki_net
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , shakespeare ==2.1.0.1
+  default-language: Haskell2010
+  default-extensions: LambdaCase, OverloadedStrings
