@@ -9,6 +9,8 @@ author:         Toma Sasaki
 maintainer:     netst915@gmail.com
 copyright:      2025 Toma Sasaki
 build-type:     Simple
+extra-source-files:
+    static/index.css
 
 source-repository head
   type: git
@@ -20,6 +22,7 @@ executable t-sasaki-net-generator
       Paths_t_sasaki_net
       Page.Home
       Page
+      Statics
   autogen-modules:
       Paths_t_sasaki_net
   hs-source-dirs:
@@ -34,5 +37,6 @@ executable t-sasaki-net-generator
     , filepath ==1.5.4.0
     , bytestring ==0.12.2.0
     , optparse-applicative ==0.18.1.0
+    , file-embed ==0.0.16.0
   default-language: Haskell2010
   default-extensions: LambdaCase, OverloadedStrings

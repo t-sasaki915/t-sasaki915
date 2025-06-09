@@ -1,5 +1,6 @@
 module Main (main) where
 
+import           Data.ByteString          (ByteString)
 import qualified Data.ByteString          as BS
 import           Options.Applicative
 import           System.Directory         (createDirectoryIfMissing)
@@ -9,6 +10,7 @@ import           Text.Printf              (printf)
 
 import           Page                     (Page (..))
 import           Page.Home                (HomePage (..))
+import           Statics                  (staticFiles)
 
 data GeneratorContext = GeneratorContext
     { outputDir :: FilePath
@@ -16,22 +18,30 @@ data GeneratorContext = GeneratorContext
 
 generatePages :: GeneratorContext -> IO ()
 generatePages ctx = do
-    putStrLn "Generating HTMLs..."
-
     createDirectoryIfMissing True (outputDir ctx)
 
-    let generator = generatePage ctx
+    putStrLn "Copying static files..."
 
-    generator HomePage
+    mapM_ copyStaticFile staticFiles
+
+    putStrLn "Generating HTMLs..."
+
+    generateHtml HomePage
 
     putStrLn "Complete"
 
-generatePage :: Page a => GeneratorContext -> a -> IO ()
-generatePage ctx page =
-    let renderedHtml = renderMarkup (pageContent page)
-        fileName = printf "%s.html" (pageName page) in
-            BS.writeFile (outputDir ctx </> fileName) (BS.toStrict renderedHtml) >>
-                putStrLn (printf "Generated %s (%s)" (show page) fileName)
+    where
+        copyStaticFile :: (FilePath, ByteString) -> IO ()
+        copyStaticFile (fileName, staticFile) =
+            BS.writeFile (outputDir ctx </> fileName) staticFile >>
+                putStrLn (printf "Copied %s" fileName)
+
+        generateHtml :: Page a => a -> IO ()
+        generateHtml page =
+            let renderedHtml = renderMarkup (pageContent page)
+                fileName = printf "%s.html" (pageName page) in
+                    BS.writeFile (outputDir ctx </> fileName) (BS.toStrict renderedHtml) >>
+                        putStrLn (printf "Generated %s (%s)" (show page) fileName)
 
 argParser :: Parser GeneratorContext
 argParser = GeneratorContext
