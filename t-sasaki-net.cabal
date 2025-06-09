@@ -14,10 +14,12 @@ source-repository head
   type: git
   location: https://github.com/t-sasaki915/t-sasaki915
 
-executable t-sasaki-net-exe
+executable t-sasaki-net-generator
   main-is: Main.hs
   other-modules:
       Paths_t_sasaki_net
+      Page.Home
+      Page
   autogen-modules:
       Paths_t_sasaki_net
   hs-source-dirs:
@@ -26,5 +28,11 @@ executable t-sasaki-net-exe
   build-depends:
       base >=4.7 && <5
     , shakespeare ==2.1.0.1
+    , blaze-markup ==0.8.3.0
+    , text ==2.1.2
+    , directory ==1.3.9.0
+    , filepath ==1.5.4.0
+    , bytestring ==0.12.2.0
+    , optparse-applicative ==0.18.1.0
   default-language: Haskell2010
   default-extensions: LambdaCase, OverloadedStrings
