@@ -12,6 +12,8 @@ import           Text.Printf              (printf)
 import           Page                     (Page (..))
 import           Page.BasicInfoInHaskell  (BasicInfoInHaskellPage (..))
 import           Page.Home                (HomePage (..))
+import           Page.ItemCalculator      (ItemCalculator (..))
+import           Page.Minesweeper         (Minesweeper (..))
 import           Statics                  (staticFiles)
 
 newtype GeneratorContext = GeneratorContext
@@ -30,6 +32,8 @@ generatePages ctx = do
 
     generateHtml HomePage
     generateHtml BasicInfoInHaskellPage
+    generateHtml ItemCalculator
+    generateHtml Minesweeper
 
     putStrLn "Complete"
 

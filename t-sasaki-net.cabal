@@ -21,6 +21,8 @@ executable t-sasaki-net-generator
   other-modules:
       Paths_t_sasaki_net
       Page.BasicInfoInHaskell
+      Page.ItemCalculator
+      Page.Minesweeper
       Page.Home
       Page
       Statics
