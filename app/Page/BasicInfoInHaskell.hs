@@ -27,16 +27,16 @@ instance Page BasicInfoInHaskellPage where
                         <span>data TomaSasaki = TomaSasaki
                         <br>
                         <span>instance Person TomaSasaki where
-                        <span>    name :: Person -> Text
+                        <span>    name :: TomaSasaki -> Text
                         <span>    name TomaSasaki = "Toma Sasaki"
                         <br>
-                        <span>    birthday :: Person -> Date
+                        <span>    birthday :: TomaSasaki -> Date
                         <span>    birthday TomaSasaki = DDMMYYYY 15 09 2006
                         <br>
-                        <span>    majors :: Person -> [Subject]
+                        <span>    majors :: TomaSasaki -> [Subject]
                         <span>    majors TomaSasaki = [Maths, ComputerScience]
                         <br>
-                        <span>    residence :: Person -> IO Place
+                        <span>    residence :: TomaSasaki -> IO Place
                         <span>    residence TomaSasaki =
                         <span>        personStatus TomaSasaki >>= \case
                         <span>            OnLongHoliday -> return Japan
