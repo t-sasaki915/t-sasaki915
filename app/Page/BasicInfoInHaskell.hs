@@ -28,7 +28,7 @@ instance Page BasicInfoInHaskellPage where
                         <br>
                         <span>instance Person TomaSasaki where
                         <span>    name :: TomaSasaki -> Name
-                        <span>    name TomaSasaki = SurnameAndFamilyName "TOMA" "SASAKI"
+                        <span>    name TomaSasaki = GivenNameAndFamilyName "TOMA" "SASAKI"
                         <br>
                         <span>    birthday :: TomaSasaki -> Date
                         <span>    birthday TomaSasaki = DDMMYYYY 15 09 2006
