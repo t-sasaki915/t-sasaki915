@@ -10,7 +10,7 @@ instance Page HomePage where
     pageName HomePage = "index"
 
     pageContent HomePage =
-        defaultPageLayout
+        defaultPageLayout "About Me"
             [shamlet|
                 <h1>About Me
                 <p>Haskell enjoyer, amateur violin player, Mozart lover and university student.

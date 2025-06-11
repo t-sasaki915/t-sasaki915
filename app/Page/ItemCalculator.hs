@@ -10,7 +10,7 @@ instance Page ItemCalculator where
     pageName ItemCalculator = "itemcalculator"
 
     pageContent ItemCalculator =
-        defaultPageLayout
+        defaultPageLayout "ItemAmountCalculator"
             [shamlet|
                 <script>
                     window.addEventListener("load", () => {

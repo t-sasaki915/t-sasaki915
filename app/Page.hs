@@ -18,13 +18,13 @@ class Show a => Page a where
     pageContent :: a -> HamletPage
 
 
-defaultPageLayout :: HamletPage -> HamletPage
-defaultPageLayout content =
+defaultPageLayout :: Text -> HamletPage -> HamletPage
+defaultPageLayout title content =
     [shamlet|
         $doctype 5
         <html lang="en">
             <head>
-                <title>t-sasaki.net
+                <title>#{title} - t-sasaki.net
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta name="description" content="t-sasaki.net">
                 <link rel="stylesheet" href="/index.css">

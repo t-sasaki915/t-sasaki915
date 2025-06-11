@@ -10,7 +10,7 @@ instance Page Minesweeper where
     pageName Minesweeper = "minesweeper"
 
     pageContent Minesweeper =
-        defaultPageLayout
+        defaultPageLayout "MinesweeperHS"
             [shamlet|
                 <script>
                     window.addEventListener("load", () => {
