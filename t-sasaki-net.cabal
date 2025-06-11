@@ -41,5 +41,6 @@ executable t-sasaki-net-generator
     , bytestring ==0.12.2.0
     , optparse-applicative ==0.18.1.0
     , file-embed ==0.0.16.0
+    , here ==1.2.14
   default-language: Haskell2010
-  default-extensions: LambdaCase, OverloadedStrings
+  default-extensions: LambdaCase, OverloadedStrings, QuasiQuotes

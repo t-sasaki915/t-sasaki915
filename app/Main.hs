@@ -2,12 +2,12 @@ module Main (main) where
 
 import           Data.ByteString          (ByteString)
 import qualified Data.ByteString          as BS
+import           Data.String.Here         (i)
 import           Data.Text                (unpack)
 import           Options.Applicative
 import           System.Directory         (createDirectoryIfMissing)
 import           System.FilePath          ((</>))
 import           Text.Blaze.Renderer.Utf8 (renderMarkup)
-import           Text.Printf              (printf)
 
 import           Page                     (Page (..))
 import           Page.BasicInfoInHaskell  (BasicInfoInHaskellPage (..))
@@ -41,7 +41,7 @@ generatePages ctx = do
         copyStaticFile :: (FilePath, ByteString) -> IO ()
         copyStaticFile (fileName, staticFile) =
             BS.writeFile (outputDir ctx </> fileName) staticFile >>
-                putStrLn (printf "Copied %s" fileName)
+                putStrLn [i|Copied ${fileName}|]
 
         generateHtml :: Page a => a -> IO ()
         generateHtml page =
@@ -56,7 +56,7 @@ generatePages ctx = do
                 writeHtml filePath =
                     let renderedHtml = BS.toStrict $ renderMarkup (pageContent page) in
                         BS.writeFile (filePath </> "index.html") renderedHtml >>
-                            putStrLn (printf "Generated %s" (show page))
+                            putStrLn [i|Generated ${page}|]
 
 
 argParser :: Parser GeneratorContext

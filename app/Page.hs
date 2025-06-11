@@ -7,13 +7,14 @@ module Page
     , shamlet
     ) where
 
-import           Data.Text   (Text)
-import           Text.Blaze  (Markup)
-import           Text.Hamlet (shamlet)
+import           Data.Text     (Text)
+import           Data.Typeable (Typeable)
+import           Text.Blaze    (Markup)
+import           Text.Hamlet   (shamlet)
 
 type HamletPage = Markup
 
-class Show a => Page a where
+class (Typeable a, Show a) => Page a where
     pageName :: a -> Text
     pageContent :: a -> HamletPage
 
