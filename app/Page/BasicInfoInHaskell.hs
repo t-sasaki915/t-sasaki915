@@ -27,8 +27,8 @@ instance Page BasicInfoInHaskellPage where
                         <span>data TomaSasaki = TomaSasaki
                         <br>
                         <span>instance Person TomaSasaki where
-                        <span>    name :: TomaSasaki -> Text
-                        <span>    name TomaSasaki = "Toma Sasaki"
+                        <span>    name :: TomaSasaki -> Name
+                        <span>    name TomaSasaki = SurnameAndFamilyName "TOMA" "SASAKI"
                         <br>
                         <span>    birthday :: TomaSasaki -> Date
                         <span>    birthday TomaSasaki = DDMMYYYY 15 09 2006
