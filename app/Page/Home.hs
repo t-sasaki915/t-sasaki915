@@ -1,5 +1,3 @@
-{-# LANGUAGE QuasiQuotes #-}
-
 module Page.Home (HomePage (..)) where
 
 import           Page (Page (..), defaultPageLayout, shamlet)

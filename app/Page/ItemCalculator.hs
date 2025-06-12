@@ -1,5 +1,3 @@
-{-# LANGUAGE QuasiQuotes #-}
-
 module Page.ItemCalculator (ItemCalculator (..)) where
 
 import           Page (Page (..), defaultPageLayout, shamlet)

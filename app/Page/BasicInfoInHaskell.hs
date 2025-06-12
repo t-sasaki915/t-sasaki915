@@ -1,6 +1,3 @@
-{-# LANGUAGE InstanceSigs #-}
-{-# LANGUAGE QuasiQuotes  #-}
-
 module Page.BasicInfoInHaskell (BasicInfoInHaskellPage (..)) where
 
 import           Page (Page (..), defaultPageLayout, shamlet)

@@ -1,5 +1,3 @@
-{-# LANGUAGE QuasiQuotes #-}
-
 module Page.Minesweeper (Minesweeper (..)) where
 
 import           Page (Page (..), defaultPageLayout, shamlet)
