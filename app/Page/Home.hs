@@ -36,16 +36,23 @@ instance Page HomePage where
                     <li>Chamber Music
 
                 <h2>Favourites
+                <h3>Programming Languages
                 <ul>
                     <li>Haskell
                     <li>LISP
+                <h3>Language Extensions
+                <ul>
+                    <li>LambdaCase
+                    <li>OverloadedStrings
+                    <li>QuasiQuotes
+                <h3>Music
+                <ul>
                     <li>Mozart: Serenade No 6 in D major
                     <li>Mozart: Violin Concerto No 3 in G major
                     <li>Mozart: Sinfonia Concertante in E-flat major
                     <li>Beethoven: String Quartet No 13 in B-flat major
                     <li>Beethoven: Symphony No 9 in D minor
                     <li>Schubert: Piano Sonata No 20 in A major
-                <span>* What I have written here are just a few part of my favourites. I cannot write all of them because the file size would be 5000TB.
 
                 <h2>Languages I speak
                 <ul>
