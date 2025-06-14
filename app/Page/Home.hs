@@ -53,6 +53,10 @@ instance Page HomePage where
                     <li>Beethoven: String Quartet No 13 in B-flat major
                     <li>Beethoven: Symphony No 9 in D minor
                     <li>Schubert: Piano Sonata No 20 in A major
+                <h3>Violin Strings
+                <ul>
+                    <li>D'addario Kaplan AMO
+                    <li>Pirastro Eudoxa
 
                 <h2>Languages I speak
                 <ul>
