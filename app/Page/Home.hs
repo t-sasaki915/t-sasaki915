@@ -49,7 +49,7 @@ instance Page HomePage where
                 <ul>
                     <li>Mozart: Serenade No 6 in D major
                     <li>Mozart: Violin Concerto No 3 in G major
-                    <li>Mozart: Sinfonia Concertante in E-flat major
+                    <li>Mozart: Sinfonia Concertante for Violin and Viola in E-flat major
                     <li>Beethoven: String Quartet No 13 in B-flat major
                     <li>Beethoven: Symphony No 9 in D minor
                     <li>Schubert: Piano Sonata No 20 in A major
