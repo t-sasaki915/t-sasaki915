@@ -25,40 +25,36 @@ instance Page HomePage where
 
                 <h2>Skills
                 <ul>
-                    <li>Programming with Haskell
-                    <li>Programming with Scala
+                    <li>Haskell Programming
 
                 <h2>Interests
                 <ul>
                     <li>(Pure) Functional Programming
                     <li>Type Safety
-                    <li>Orchestral Music
-                    <li>Chamber Music
 
                 <h2>Favourites
                 <h3>Programming Languages
                 <ul>
                     <li>Haskell
-                    <li>LISP
                 <h3>Language Extensions
                 <ul>
                     <li>LambdaCase
                     <li>OverloadedStrings
                     <li>QuasiQuotes
-                <h3>Music
+                <h3>Functions
                 <ul>
-                    <li>Mozart: Serenade No 6 in D major
-                    <li>Mozart: Violin Concerto No 3 in G major
-                    <li>Mozart: Sinfonia Concertante for Violin and Viola in E-flat major
-                    <li>Beethoven: String Quartet No 13 in B-flat major
-                    <li>Beethoven: Symphony No 9 in D minor
-                    <li>Schubert: Piano Sonata No 20 in A major
-                <h3>Violin Strings
-                <ul>
-                    <li>D'addario Kaplan AMO
-                    <li>Pirastro Eudoxa
+                    <li>
+                        <a href="https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:-62--62--61-">>>=
+                    <li>
+                        <a href="https://hackage.haskell.org/package/base-4.21.0.0/docs/Data-Functor.html#v:-60--38--62-"><&>
+                    <li>
+                        <a href="https://hackage.haskell.org/package/base-4.21.0.0/docs/Control-Monad.html#v:forM_">forM_
+                    <li>
+                        <a href="https://hackage.haskell.org/package/extra-1.8/docs/Control-Monad-Extra.html#v:whenM">whenM
+                    <li>
+                        <a href="https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:foldl">foldl
 
-                <h2>Languages I speak
+                <h2>Languages
                 <ul>
                     <li>Japanese (ja_JP, very confident)
                     <li>English (en_GB, confident)
