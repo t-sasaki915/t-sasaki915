@@ -13,7 +13,7 @@ instance Page HomePage where
                 <h1>About Me
                 <p>Haskell enjoyer, amateur violin player, Mozart lover and university student.
 
-                <h2>Basic informations
+                <h2>Basic Informations
                 <span>Name: Toma Sasaki<br>
                 <span>Birthday: 15 September 2006<br>
                 <span>Major: Maths and Computer Science<br>

@@ -23,7 +23,7 @@ instance Page BasicInfoInHaskellPage where
                         <br>
                         <span>data TomaSasaki = TomaSasaki
                         <br>
-                        <span>instance Person TomaSasaki where
+                        <span>instance SelfIntroduction TomaSasaki where
                         <span>    name :: TomaSasaki -> Name
                         <span>    name TomaSasaki = GivenNameAndFamilyName "TOMA" "SASAKI"
                         <br>
