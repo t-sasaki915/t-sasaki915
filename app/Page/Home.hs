@@ -62,6 +62,9 @@ instance Page HomePage where
                 <h2>What I made
                 <ul>
                     <li>
+                        <a href="https://github.com/t-sasaki915/InlineBrainfuck">InlineBrainfuck
+                        A library for treating Brainfuck codes as Text or String
+                    <li>
                         <a href="https://minesweeper.t-sasaki.net/">MinesweeperHS
                         Minesweeper written with Haskell & ghcjs
                     <li>
