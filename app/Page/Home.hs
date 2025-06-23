@@ -63,7 +63,7 @@ instance Page HomePage where
                 <ul>
                     <li>
                         <a href="https://github.com/t-sasaki915/InlineBrainfuck">InlineBrainfuck
-                        A library for treating Brainfuck codes as Text or String
+                        Brainfuck QuasiQuoter Library
                     <li>
                         <a href="https://minesweeper.t-sasaki.net/">MinesweeperHS
                         Minesweeper written with Haskell & ghcjs
