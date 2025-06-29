@@ -65,11 +65,14 @@ instance Page HomePage where
                         <a href="https://github.com/t-sasaki915/InlineBrainfuck">InlineBrainfuck
                         Brainfuck QuasiQuoter Library
                     <li>
-                        <a href="https://minesweeper.t-sasaki.net/">MinesweeperHS
-                        Minesweeper written with Haskell & ghcjs
+                        <a href="https://github.com/t-sasaki915/ConsoleAsk">ConsoleAsk
+                        Simple CLI user input library
                     <li>
                         <a href="https://itemcalculator.t-sasaki.net/">ItemAmountCalculator
                         A web application that helps you convert units of a huge amount of Minecraft items
+                    <li>
+                        <a href="https://minesweeper.t-sasaki.net/">MinesweeperHS
+                        Minesweeper written with Haskell & ghcjs
 
                 <h2>Affiliations
                 <ul>
