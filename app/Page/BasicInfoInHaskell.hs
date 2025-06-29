@@ -36,8 +36,8 @@ instance Page BasicInfoInHaskellPage where
                         <span>    residence :: TomaSasaki -> IO Place
                         <span>    residence TomaSasaki =
                         <span>        personStatus TomaSasaki >>= \case
-                        <span>            OnLongHoliday -> return Japan
-                        <span>            _             -> return England
+                        <span>            OnLongHoliday -> pure Japan
+                        <span>            _             -> pure England
 
                 <a href="/">Back
             |]
