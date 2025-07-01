@@ -88,7 +88,7 @@ instance Page HomePage where
                         <a href="https://musescore.com/user/88726153">tsasaki915
                     <li>
                         Hackage:
-                        <a href="https://hackage.haskell.org/user/t_sasaki915">Toma Sasaki
+                        <a href="https://hackage.haskell.org/user/t_sasaki915">t_sasaki915
                     <li>
                         Gmail: netst915 [at] gmail.com
 
