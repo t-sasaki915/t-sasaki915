@@ -64,5 +64,5 @@ jobs:
     - name: Extract artifact
       run: tar -xvf artifact.tar
     - name: Deploy artifact
-      run: scp t-sasaki-net-server -p ${{secrets.SSH_PORT}} -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:~/
+      run: scp ./t-sasaki-net-server -p ${{secrets.SSH_PORT}} -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:~/t-sasaki-net-server
       
