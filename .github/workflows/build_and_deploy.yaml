@@ -60,5 +60,5 @@ jobs:
       with:
         name: server-bin
     - name: Deploy server
-      run: scp $GITHUB_WORKSPACE/t-sasaki-net-server/t-sasaki-net-server -p ${{secrets.SSH_PORT}} -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:~/
+      run: scp $GITHUB_WORKSPACE/t-sasaki-net-server -p ${{secrets.SSH_PORT}} -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:~/
       
