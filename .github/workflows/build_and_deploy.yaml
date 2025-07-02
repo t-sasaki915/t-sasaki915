@@ -37,10 +37,7 @@ jobs:
           ${{ runner.os }}-
     - name: Build Server
       run: cabal update && cabal build
-    - name: Locate the binary
-      run: echo $(cabal list-bin t-sasaki-net-server)
-      id: locate_binary
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ${{ steps.locate_binary.outputs.stdout }}
+        path: ./dist-newstyle/build/x86_64-linux/ghc-9.12.2/t-sasaki-net-server-0.1.0.0/x/t-sasaki-net-server/build/t-sasaki-net-server/t-sasaki-net-server
