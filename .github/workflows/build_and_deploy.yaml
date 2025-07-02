@@ -63,6 +63,8 @@ jobs:
         name: server-bin
     - name: Extract artifact
       run: tar -xvf artifact.tar
+    - name: Delete old server
+      run: ssh -i ~/.ssh/id_rsa -p ${{secrets.SSH_PORT}} ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}} rm -f ${{secrets.SCP_TARGET}}/t-sasaki-net-server
     - name: Deploy artifact
       run: scp -i ~/.ssh/id_rsa -P ${{secrets.SSH_PORT}} ./t-sasaki-net-server ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:${{secrets.SCP_TARGET}}
     - name: Restart service
