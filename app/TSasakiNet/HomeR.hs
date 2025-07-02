@@ -91,7 +91,7 @@ getHomeR = defaultTSasakiNetLayout "About Me" $
                 Gmail: netst915 [at] gmail.com
 
         <footer>
-            <a href="https://github.com/t-sasaki915/t-sasaki915">This page is written in Haskell
+            <a href="https://github.com/t-sasaki915/t-sasaki915">This site is written in Haskell
             \
             because why not.
     |]
