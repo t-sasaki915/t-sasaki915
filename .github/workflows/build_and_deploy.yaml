@@ -55,5 +55,5 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
     - name: SSH Test
-      run: ssh -i id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}} -p ${{secrets.SSH_PORT}} touch ~/TEST
+      run: ssh -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}} -p ${{secrets.SSH_PORT}} touch ~/TEST
       
