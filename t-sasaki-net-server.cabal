@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
-name:           t-sasaki-net
+name:           t-sasaki-net-server
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/t-sasaki915/t-sasaki915#readme>
 homepage:       https://github.com/t-sasaki915/t-sasaki915#readme
@@ -16,31 +16,23 @@ source-repository head
   type: git
   location: https://github.com/t-sasaki915/t-sasaki915
 
-executable t-sasaki-net-generator
+executable t-sasaki-net-server
   main-is: Main.hs
   other-modules:
-      Paths_t_sasaki_net
-      Page.BasicInfoInHaskell
-      Page.ItemCalculator
-      Page.Minesweeper
-      Page.Home
-      Page
-      Statics
+      Paths_t_sasaki_net_server
+      TSasakiNet.BasicInfoInHaskellR
+      TSasakiNet.HomeR
+      TSasakiNet.StyleSheet
+      TSasakiNet
   autogen-modules:
-      Paths_t_sasaki_net
+      Paths_t_sasaki_net_server
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , shakespeare ==2.1.0.1
-    , blaze-markup ==0.8.3.0
-    , text ==2.1.2
-    , directory ==1.3.9.0
-    , filepath ==1.5.4.0
-    , bytestring ==0.12.2.0
     , optparse-applicative ==0.18.1.0
-    , file-embed ==0.0.16.0
-    , here ==1.2.14
+    , yesod ==1.6.2.1
   default-language: Haskell2010
   default-extensions: LambdaCase, OverloadedStrings, QuasiQuotes
