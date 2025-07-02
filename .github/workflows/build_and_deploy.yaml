@@ -40,6 +40,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
+        name: server-bin
         path: ./dist-newstyle/build/x86_64-linux/ghc-9.12.2/t-sasaki-net-server-0.1.0.0/x/t-sasaki-net-server/build/t-sasaki-net-server
 
   deploy:
@@ -54,6 +55,10 @@ jobs:
         ssh-keyscan -p ${{secrets.SSH_PORT}} -H ${{secrets.SSH_HOST}} > ~/.ssh/known_hosts
       env:
         SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-    - name: SSH Test
-      run: ssh -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}} -p ${{secrets.SSH_PORT}} touch ~/TEST
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: server-bin
+    - name: Deploy server
+      run: scp ./t-sasaki-net-server/t-sasaki-net-server -p ${{secrets.SSH_PORT}} -i ~/.ssh/id_rsa ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOST}}:~/
       
