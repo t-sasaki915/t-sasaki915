@@ -9,8 +9,6 @@ author:         Toma Sasaki
 maintainer:     netst915@gmail.com
 copyright:      2025 Toma Sasaki
 build-type:     Simple
-extra-source-files:
-    static/index.css
 
 source-repository head
   type: git

@@ -57,7 +57,7 @@ getHomeR = defaultTSasakiNetLayout "About Me" $
             <li>Japanese (ja_JP, very confident)
             <li>English (en_GB, confident)
 
-        <h2>What I made
+        <h2>My Works
         <ul>
             <li>
                 <a href="https://github.com/t-sasaki915/InlineBrainfuck">InlineBrainfuck
@@ -76,7 +76,7 @@ getHomeR = defaultTSasakiNetLayout "About Me" $
         <ul>
             <li>The University of Manchester (undergraduate student)
 
-        <h2>Links
+        <h2>Accounts
         <ul>
             <li>
                 GitHub:
@@ -88,10 +88,27 @@ getHomeR = defaultTSasakiNetLayout "About Me" $
                 Hackage:
                 <a href="https://hackage.haskell.org/user/t_sasaki915">t_sasaki915
             <li>
-                Gmail: netst915 [at] gmail.com
+                Email: netst915 [at] gmail.com
 
-        <footer>
-            <a href="https://github.com/t-sasaki915/t-sasaki915">This site is written in Haskell
-            \
-            because why not.
+        <h2>Site Informations
+        <span>
+            Programming Language:
+            <a href="https://www.haskell.org">Haskell
+        <br>
+        <span>
+            Server Framework:
+            <a href="https://www.yesodweb.com">Yesod
+        <br>
+        <span>
+            Server Provider:
+            <a href="https://www.vultr.com">Vultr
+        <br>
+        <span>Server Location: London, United Kingdom<br>
+        <span>
+            Automatic Deploy:
+            <a href="https://github.com/features/actions">GitHub Actions
+        <br>
+        <span>
+            Repository:
+            <a href="https://github.com/t-sasaki915/t-sasaki915">t-sasaki915/t-sasaki915
     |]
