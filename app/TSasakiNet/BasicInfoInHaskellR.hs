@@ -27,8 +27,8 @@ getBasicInfoInHaskellR = defaultTSasakiNetLayout "Basic Informations in Haskell"
                 <span>    birthday :: TomaSasaki -> Date
                 <span>    birthday TomaSasaki = DDMMYYYY 15 09 2006
                 <br>
-                <span>    majors :: TomaSasaki -> [Subject]
-                <span>    majors TomaSasaki = [Maths, ComputerScience]
+                <span>    education :: TomaSasaki -> (EducationLevel, School)
+                <span>    education TomaSasaki = (Undergraduate, TheUniversityOfManchester)
                 <br>
                 <span>    residence :: TomaSasaki -> IO Place
                 <span>    residence TomaSasaki =
