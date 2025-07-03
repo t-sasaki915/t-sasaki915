@@ -28,7 +28,7 @@ defaultTSasakiNetLayout title content =
             [hamlet|
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="description" content="t-sasaki.net">
+                <meta name="description" content="Website of Toma Sasaki">
             |]
 
         toWidgetHead commonStyleSheet
