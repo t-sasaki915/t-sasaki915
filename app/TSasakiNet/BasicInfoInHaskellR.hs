@@ -5,7 +5,7 @@ import           Yesod      (HandlerFor, Html, whamlet)
 import           TSasakiNet (Route (HomeR), TSasakiNet, defaultTSasakiNetLayout)
 
 getBasicInfoInHaskellR :: (HandlerFor TSasakiNet) Html
-getBasicInfoInHaskellR = defaultTSasakiNetLayout "Basic Informations in Haskell" $
+getBasicInfoInHaskellR = defaultTSasakiNetLayout "Basic Informations in Haskell"
     [whamlet|
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js">
