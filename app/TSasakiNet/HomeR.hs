@@ -6,7 +6,7 @@ import           TSasakiNet (Route (BasicInfoInHaskellR), TSasakiNet,
                              defaultTSasakiNetLayout)
 
 getHomeR :: (HandlerFor TSasakiNet) Html
-getHomeR = defaultTSasakiNetLayout "About Me" $
+getHomeR = defaultTSasakiNetLayout "About Me"
     [whamlet|
         <h1>About Me
         <p>Haskell enjoyer, amateur violin player, Mozart lover and university student.
