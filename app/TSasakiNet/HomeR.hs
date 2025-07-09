@@ -12,7 +12,7 @@ getHomeR = defaultTSasakiNetLayout "About Me" $
         <p>Haskell enjoyer, amateur violin player, Mozart lover and university student.
 
         <h2>Basic Informations
-        <span>Name: Toma Sasaki<br>
+        <span>Name: TOMA SASAKI<br>
         <span>Birthday: 15 September 2006<br>
         <span>Education: Undergraduate, The University of Manchester<br>
         <span>Residence: England and Japan (when I'm on a long holiday)<br>
