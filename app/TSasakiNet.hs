@@ -8,6 +8,7 @@ import                          Yesod
 
 import {-# SOURCE #-}           TSasakiNet.BasicInfoInHaskellR (getBasicInfoInHaskellR)
 import {-# SOURCE #-}           TSasakiNet.HomeR               (getHomeR)
+import {-# SOURCE #-}           TSasakiNet.SiteInformationR    (getSiteInformationR)
 import                          TSasakiNet.StyleSheet          (commonStyleSheet)
 
 data TSasakiNet = TSasakiNet
@@ -15,6 +16,7 @@ data TSasakiNet = TSasakiNet
 mkYesod "TSasakiNet" [parseRoutes|
 /                   HomeR               GET
 /BasicInfoInHaskell BasicInfoInHaskellR GET
+/SiteInformation    SiteInformationR    GET
 |]
 
 instance Yesod TSasakiNet

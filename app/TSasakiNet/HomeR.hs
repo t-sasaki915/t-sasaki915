@@ -2,8 +2,7 @@ module TSasakiNet.HomeR (getHomeR) where
 
 import           Yesod      (HandlerFor, Html, whamlet)
 
-import           TSasakiNet (Route (BasicInfoInHaskellR), TSasakiNet,
-                             defaultTSasakiNetLayout)
+import           TSasakiNet (Route (..), TSasakiNet, defaultTSasakiNetLayout)
 
 getHomeR :: (HandlerFor TSasakiNet) Html
 getHomeR = defaultTSasakiNetLayout "About Me"
@@ -90,25 +89,7 @@ getHomeR = defaultTSasakiNetLayout "About Me"
             <li>
                 Email: netst915 [at] gmail.com
 
-        <h2>Site Informations
-        <span>
-            Programming Language:
-            <a href="https://www.haskell.org">Haskell
         <br>
-        <span>
-            Server Framework:
-            <a href="https://www.yesodweb.com">Yesod
-        <br>
-        <span>
-            Server Provider:
-            <a href="https://www.vultr.com">Vultr
-        <br>
-        <span>Server Location: London, United Kingdom<br>
-        <span>
-            Automatic Deploy:
-            <a href="https://github.com/features/actions">GitHub Actions
-        <br>
-        <span>
-            Repository:
-            <a href="https://github.com/t-sasaki915/t-sasaki915">t-sasaki915/t-sasaki915
+        Technical informations about this site is available
+        <a href=@{SiteInformationR}>here.
     |]

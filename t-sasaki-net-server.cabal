@@ -20,6 +20,7 @@ executable t-sasaki-net-server
       Paths_t_sasaki_net_server
       TSasakiNet.BasicInfoInHaskellR
       TSasakiNet.HomeR
+      TSasakiNet.SiteInformationR
       TSasakiNet.StyleSheet
       TSasakiNet
   autogen-modules:
