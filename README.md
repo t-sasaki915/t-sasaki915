@@ -2,7 +2,7 @@
 
 Haskell enjoyer, amateur violin player, Mozart lover and university student.<br>
 
-Name: Toma Sasaki<br>
+Name: TOMA SASAKI<br>
 Birthday: 15 September 2006<br>
 Education: Undergraduate, The University of Manchester<br>
 Residence: England and Japan (when I'm on a long holiday)<br>
