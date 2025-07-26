@@ -20,6 +20,7 @@ executable t-sasaki-net-server
       Paths_t_sasaki_net_server
       TSasakiNet.BasicInfoInHaskellR
       TSasakiNet.HomeR
+      TSasakiNet.HsMakefilesR
       TSasakiNet.SiteInformationR
       TSasakiNet.StyleSheet
       TSasakiNet
@@ -33,5 +34,6 @@ executable t-sasaki-net-server
     , shakespeare ==2.1.0.1
     , optparse-applicative ==0.18.1.0
     , yesod ==1.6.2.1
+    , text ==2.1.2
   default-language: Haskell2010
   default-extensions: LambdaCase, OverloadedStrings, QuasiQuotes

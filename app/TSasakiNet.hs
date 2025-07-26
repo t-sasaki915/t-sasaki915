@@ -1,22 +1,26 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies    #-}
+{-# LANGUAGE ViewPatterns    #-}
 {-# OPTIONS_GHC -Wno-unused-top-binds #-}
 
 module TSasakiNet (TSasakiNet (..), Route (..), defaultTSasakiNetLayout) where
 
+import                          Data.Text                      (Text)
 import                          Yesod
 
 import {-# SOURCE #-}           TSasakiNet.BasicInfoInHaskellR (getBasicInfoInHaskellR)
 import {-# SOURCE #-}           TSasakiNet.HomeR               (getHomeR)
+import {-# SOURCE #-}           TSasakiNet.HsMakefilesR        (getHsMakefilesR)
 import {-# SOURCE #-}           TSasakiNet.SiteInformationR    (getSiteInformationR)
 import                          TSasakiNet.StyleSheet          (commonStyleSheet)
 
 data TSasakiNet = TSasakiNet
 
 mkYesod "TSasakiNet" [parseRoutes|
-/                   HomeR               GET
-/BasicInfoInHaskell BasicInfoInHaskellR GET
-/SiteInformation    SiteInformationR    GET
+/                          HomeR               GET
+/BasicInfoInHaskell        BasicInfoInHaskellR GET
+/SiteInformation           SiteInformationR    GET
+/hs-makefiles/#Text/*Texts HsMakefilesR        GET
 |]
 
 instance Yesod TSasakiNet
