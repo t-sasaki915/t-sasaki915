@@ -35,5 +35,7 @@ executable t-sasaki-net-server
     , optparse-applicative ==0.18.1.0
     , yesod ==1.6.2.1
     , text ==2.1.2
+    , http-conduit ==2.3.9.1
+    , bytestring ==0.12.2.0
   default-language: Haskell2010
   default-extensions: LambdaCase, OverloadedStrings, QuasiQuotes

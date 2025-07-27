@@ -1,17 +1,37 @@
 module TSasakiNet.HsMakefilesR (getHsMakefilesR) where
 
-import           Data.Text  (Text, intercalate)
-import           Yesod      (HandlerFor, Html, redirect)
+import           Data.Text           (Text, intercalate, unpack)
+import           Network.HTTP.Simple
+import           Yesod
 
-import           TSasakiNet (TSasakiNet)
+import           TSasakiNet          (TSasakiNet)
 
-latestMakefileVersion :: Text
-latestMakefileVersion = "0.1.0.0"
+newtype GitHubAPI = GitHubAPI
+    { tagName :: Text
+    }
 
-getHsMakefilesR :: Text -> [Text] -> (HandlerFor TSasakiNet) Html
+instance FromJSON GitHubAPI where
+    parseJSON (Object v) = GitHubAPI <$> v .: "tag_name"
+    parseJSON _          = fail "Invalid GitHubAPI"
+
+fetchLatestTag :: IO Text
+fetchLatestTag =
+    parseRequest "https://api.github.com/repos/t-sasaki915/haskell-makefiles/releases/latest" >>= \request ->
+        let request' = setRequestHeader "User-Agent" ["request"] request in
+            tagName . getResponseBody <$> httpJSON request'
+
+getHsMakefilesR :: Text -> [Text] -> (HandlerFor TSasakiNet) TypedContent
 getHsMakefilesR makefileVersion makefilePaths = do
-    let makefileVersion' = case makefileVersion of
-            "latest" -> latestMakefileVersion
-            x        -> x
+    makefileVersion' <-
+        case makefileVersion of
+            "latest" -> liftIO fetchLatestTag
+            x        -> pure x
 
-    redirect ("https://raw.githubusercontent.com/t-sasaki915/haskell-makefiles/refs/tags/" <> makefileVersion' <> "/" <> intercalate "/" makefilePaths <> "/Makefile")
+    let githubUrl = "https://raw.githubusercontent.com/t-sasaki915/haskell-makefiles/refs/tags/" <> makefileVersion' <> "/" <> intercalate "/" makefilePaths <> "/Makefile"
+
+    response <- parseRequest (unpack githubUrl) >>= httpBS
+
+    case getResponseStatusCode response of
+        200 -> sendResponse $ TypedContent "text/plain" (toContent (getResponseBody response))
+        404 -> notFound
+        _   -> invalidArgs []
