@@ -27,7 +27,7 @@ getHsMakefilesR makefileVersion makefilePaths = do
             "latest" -> liftIO fetchLatestTag
             x        -> pure x
 
-    let githubUrl = "https://raw.githubusercontent.com/t-sasaki915/haskell-makefiles/refs/tags/" <> makefileVersion' <> "/" <> intercalate "/" makefilePaths <> "/Makefile"
+    let githubUrl = "https://raw.githubusercontent.com/t-sasaki915/haskell-makefiles/refs/tags/" <> makefileVersion' <> "/" <> intercalate "/" makefilePaths
 
     response <- parseRequest (unpack githubUrl) >>= httpBS
 
