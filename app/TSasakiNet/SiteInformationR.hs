@@ -23,9 +23,9 @@ getSiteInformationR = defaultTSasakiNetLayout "Site Information"
         command.
         <br>
 
-        The server provider is
-        <a href="https://www.vultr.com/">Vultr
-        and I am using an instance located in London, United Kingdom.
+        The server is located at my home in Japan. And its OS is
+        <a href="https://www.debian.org/">Debian
+        12.
         <br>
 
         The GitHub repository of this site is
